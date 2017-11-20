@@ -1,12 +1,15 @@
 let mix = require("laravel-mix");
 
 mix.disableNotifications();
-// mix.options({ processCssUrls: false });
+mix.options({ processCssUrls: false });
+mix.setPublicPath("dist/");
 mix
   .js("resources/assets/js/app.js", "dist/js")
-  .sass("resources/assets/scss/app.scss", "dist/style.css")
+  .sass("resources/assets/scss/app.scss", "dist/css")
+  .sass("resources/assets/scss/style.scss", "dist/")
   .copyDirectory("resources/assets/icons", "dist/icons")
-  .copyDirectory("resources/assets/img", "dist/img");
+  .copyDirectory("resources/assets/img", "dist/img")
+  .copyDirectory("node_modules/open-iconic/font/fonts", "dist/fonts");
 
 // Full API
 // mix.js(src, output);

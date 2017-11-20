@@ -6,6 +6,8 @@ Repo ini merupakan kerangka setup Development Environment WordPress baik themes 
 * Membantu proses konfigurasi dalam melakukan kompilasi assets tersebut ke dalam satu file javascript dan satu file css, dengan catatan dukungan Webpack sudah ada
 * Memudahkan proses penambahan terhadap kebutuhan eksternal, misalkan untuk menggunakan fonticon di Twitter Bootstrap v.4 yang sudah tidak lagi menyertakan glyphicon ke dalam rilisnya
 
+![WP Assets dan Laravel Mix](wp-assets-laravel-mix.jpg)
+
 ## Static Assets untuk WordPress Themes Development
 
 Contoh kasus kebutuhan terhadap eksternal script dan styles yang secara langsung didukung oleh repository ini adalah;
@@ -78,7 +80,7 @@ $ git clone https://github.com/tajidyakub/wp-assets-laravel-mix.git wp-assets
 $ cd wp-assets
 $ npm install
 $ npm run dev
-$ npm run watch --pool
+$ npm run watch --poll
 ```
 Informasi mengenai Laravel Mix dan interface ke Webpack dpat dipelajari di file `webpack.mix.js`
 
