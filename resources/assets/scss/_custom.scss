@@ -1,0 +1,36 @@
+// Theming bootstrap via SCSS
+// Change theme's color to firefox pothon, Mozille
+$theme-colors: (
+  "primary":#0a84ff,
+  "danger": #ff0039,
+  "warning": #ffe900,
+  "success": #30e60b,
+  "info": #00feff,
+  "ink": #363959,
+  "grey": #737373
+);
+$blue: #0a84ff;
+$indigo: #363959;
+$magenta: #ff1ad9;
+$purple: #9400ff;
+$red: #ff0039;
+$green: #30e60b;
+$yellow: #ffe900;
+$teal: #00feff;
+
+$colors: ("magenta": $magenta) !default;
+$body-bg: #222222;
+$text-primary-reverse: #ffffff;
+$text-secondary-reverse: #f9f9fa;
+$text-primary: #0c0c0d;
+$text-secondary: #737373;
+$body-color: $text-primary-reverse;
+// Links
+$link-hover-decoration: none !default;
+// Texts
+$text-muted: #737373;
+$mark-bg: #ffe900;
+// Bootstrap options
+$enable-rounded: false;
+$enable-shadows: true;
+$maxwidth: 900px;

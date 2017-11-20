@@ -1,0 +1,38 @@
+{
+  "name": "wp-assets",
+  "version": "1.0.0",
+  "description": "Boilerplate untuk static assets management dalam pengembangan WordPress Themes",
+  "main": "webpack.mix.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "npm run watch -- --watch-poll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://tajidyakub@github.com/tajidyakub/wp-assets-laravel-mix.git"
+  },
+  "keywords": [
+    "twitter bootstrap, laravel mix, webpack, WordPress"
+  ],
+  "author": "Tajid Yakub <tajid.yakub@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tajidyakub/wp-assets-laravel-mix/issues"
+  },
+  "homepage": "https://github.com/tajidyakub/wp-assets-laravel-mix#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^3.2.1",
+    "open-iconic": "^1.1.1",
+    "popper.js": "^1.12.9"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "cross-env": "^5.1.1",
+    "laravel-mix": "^1.6.1",
+    "postcss-loader": "^2.0.8",
+    "sass-loader": "^6.0.6"
+  }
+}
